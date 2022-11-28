@@ -1,0 +1,30 @@
+@use 'variables' as v;
+
+.btn{
+    
+    background: v.$color1;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px ;
+    cursor: pointer;
+    color: white;
+    font-size: 32px ;
+    &_box{
+     
+     position: relative;
+     
+    }
+    &_shadow{
+        height: 60px;
+        width: 60px;
+        background: v.$color2;
+        position: absolute;
+        top: 5px;
+        border-radius: 50%;
+        z-index: -1;
+    }
+    &:active{
+        transform: translateY(4px);
+    }
+}
+
